@@ -82,8 +82,8 @@ class << ActiveRecord::Base
     end
   end
   
-  # Alias has_ancestry with acts_as_tree, if it's available.
-  if !defined?(ActsAsTree) 
-    alias_method :acts_as_tree, :has_ancestry
-  end
+  # This does not work
+  # if !defined?(ActsAsTree) 
+  #   alias_method :acts_as_tree, :has_ancestry
+  # end
 end
